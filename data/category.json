@@ -1,0 +1,44 @@
+[
+    {
+        "name_category": "Компьютеры"
+    },
+    {
+        "name_category": "Процессоры"
+    },
+    {
+        "name_category": "Видеокарты"
+    },
+    {
+        "name_category": "Материнские платы"
+    },
+    {
+        "name_category": "Оперативная память"
+    },
+    {
+        "name_category": "Диски SSD"
+    },
+    {
+        "name_category": "Диски HDD"
+    },
+    {
+        "name_category": "Блоки питания"
+    },
+    {
+        "name_category": "Корпуса"
+    },
+    {
+        "name_category": "Кулеры"
+    },
+    {
+        "name_category": "Новинки"
+    },
+    {
+        "name_category": "Мониторы"
+    },
+    {
+        "name_category": "Аксессуары"
+    },
+    {
+        "name_category": "Клавиатуры и мыши"
+    }
+]

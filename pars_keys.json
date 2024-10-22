@@ -1,0 +1,428 @@
+{
+    "list_urls_and_keys":[
+        {
+            "name": "category",
+            "is_pages": 0,
+            "data": [
+                {
+                    "url": "https://28bit.ru/",
+                    "elements": [
+                        {
+                            "field": "category",
+                            "element": "span",
+                            "key": "h-categ__name"
+                        },
+                        {
+                            "field": "image_product",
+                            "element": "img",
+                            "key": "lazy-img"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Компьютеры",
+            "is_pages": 1,
+            "data": [
+                {
+                    "url": "https://28bit.ru/category/kompyutery/",
+                    "elements": [
+                        {
+                            "field": "name_product",
+                            "element": "span",
+                            "key": "products__item-info-name"
+                        },
+                        {
+                            "field": "characterizations",
+                            "element": "span",
+                            "key": "p-features__item-val"
+                        },
+                        {
+                            "field": "price_product",
+                            "element": "div",
+                            "key": "products__price-new"
+                        },
+                        {
+                            "field": "image_product",
+                            "element": "img",
+                            "key": "lazy-img"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Процессоры",
+            "is_pages": 1,
+            "data": [
+                {
+                    "url": "https://28bit.ru/category/protsessory/",
+                    "elements": [
+                        {
+                            "field": "name_product",
+                            "element": "span",
+                            "key": "products__item-info-name"
+                        },
+                        {
+                            "field": "characterizations",
+                            "element": "span",
+                            "key": "p-features__item-val"
+                        },
+                        {
+                            "field": "price_product",
+                            "element": "div",
+                            "key": "products__price-new"
+                        },
+                        {
+                            "field": "image_product",
+                            "element": "img",
+                            "key": "lazy-img"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Видеокарты",
+            "is_pages": 1,
+            "data": [
+                {
+                    "url": "https://28bit.ru/category/videokarty/",
+                    "elements": [
+                        {
+                            "field": "name_product",
+                            "element": "span",
+                            "key": "products__item-info-name"
+                        },
+                        {
+                            "field": "characterizations",
+                            "element": "span",
+                            "key": "p-features__item-val"
+                        },
+                        {
+                            "field": "price_product",
+                            "element": "div",
+                            "key": "products__price-new"
+                        },
+                        {
+                            "field": "image_product",
+                            "element": "img",
+                            "key": "lazy-img"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Материнские платы",
+            "is_pages": 1,
+            "data": [
+                {
+                    "url": "https://28bit.ru/category/materinskie-platy/",
+                    "elements": [
+                        {
+                            "field": "name_product",
+                            "element": "span",
+                            "key": "products__item-info-name"
+                        },
+                        {
+                            "field": "characterizations",
+                            "element": "span",
+                            "key": "p-features__item-val"
+                        },
+                        {
+                            "field": "price_product",
+                            "element": "div",
+                            "key": "products__price-new"
+                        },
+                        {
+                            "field": "image_product",
+                            "element": "img",
+                            "key": "lazy-img"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Оперативная память",
+            "is_pages": 1,
+            "data": [
+                {
+                    "url": "https://28bit.ru/category/operativnaya-pamyat/",
+                    "elements": [
+                        {
+                            "field": "name_product",
+                            "element": "span",
+                            "key": "products__item-info-name"
+                        },
+                        {
+                            "field": "characterizations",
+                            "element": "span",
+                            "key": "p-features__item-val"
+                        },
+                        {
+                            "field": "price_product",
+                            "element": "div",
+                            "key": "products__price-new"
+                        },
+                        {
+                            "field": "image_product",
+                            "element": "img",
+                            "key": "lazy-img"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Диски SSD",
+            "is_pages": 1,
+            "data": [
+                {
+                    "url": "https://28bit.ru/category/diski-ssd/",
+                    "elements": [
+                        {
+                            "field": "name_product",
+                            "element": "span",
+                            "key": "products__item-info-name"
+                        },
+                        {
+                            "field": "characterizations",
+                            "element": "span",
+                            "key": "p-features__item-val"
+                        },
+                        {
+                            "field": "price_product",
+                            "element": "div",
+                            "key": "products__price-new"
+                        },
+                        {
+                            "field": "image_product",
+                            "element": "img",
+                            "key": "lazy-img"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Диски HDD",
+            "is_pages": 1,
+            "data": [
+                {
+                    "url": "https://28bit.ru/category/diski-hdd/",
+                    "elements": [
+                        {
+                            "field": "name_product",
+                            "element": "span",
+                            "key": "products__item-info-name"
+                        },
+                        {
+                            "field": "characterizations",
+                            "element": "span",
+                            "key": "p-features__item-val"
+                        },
+                        {
+                            "field": "price_product",
+                            "element": "div",
+                            "key": "products__price-new"
+                        },
+                        {
+                            "field": "image_product",
+                            "element": "img",
+                            "key": "lazy-img"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Блоки питания",
+            "is_pages": 1,
+            "data": [
+                {
+                    "url": "https://28bit.ru/category/bloki-pitaniya/",
+                    "elements": [
+                        {
+                            "field": "name_product",
+                            "element": "span",
+                            "key": "products__item-info-name"
+                        },
+                        {
+                            "field": "characterizations",
+                            "element": "span",
+                            "key": "p-features__item-val"
+                        },
+                        {
+                            "field": "price_product",
+                            "element": "div",
+                            "key": "products__price-new"
+                        },
+                        {
+                            "field": "image_product",
+                            "element": "img",
+                            "key": "lazy-img"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Корпуса",
+            "is_pages": 1,
+            "data": [
+                {
+                    "url": "https://28bit.ru/category/korpusa/",
+                    "elements": [
+                        {
+                            "field": "name_product",
+                            "element": "span",
+                            "key": "products__item-info-name"
+                        },
+                        {
+                            "field": "characterizations",
+                            "element": "span",
+                            "key": "p-features__item-val"
+                        },
+                        {
+                            "field": "price_product",
+                            "element": "div",
+                            "key": "products__price-new"
+                        },
+                        {
+                            "field": "image_product",
+                            "element": "img",
+                            "key": "lazy-img"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Кулеры",
+            "is_pages": 1,
+            "data": [
+                {
+                    "url": "https://28bit.ru/category/kulery/",
+                    "elements": [
+                        {
+                            "field": "name_product",
+                            "element": "span",
+                            "key": "products__item-info-name"
+                        },
+                        {
+                            "field": "characterizations",
+                            "element": "span",
+                            "key": "p-features__item-val"
+                        },
+                        {
+                            "field": "price_product",
+                            "element": "div",
+                            "key": "products__price-new"
+                        },
+                        {
+                            "field": "image_product",
+                            "element": "img",
+                            "key": "lazy-img"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Мониторы",
+            "is_pages": 1,
+            "data": [
+                {
+                    "url": "https://28bit.ru/category/monitory/",
+                    "elements": [
+                        {
+                            "field": "name_product",
+                            "element": "span",
+                            "key": "products__item-info-name"
+                        },
+                        {
+                            "field": "characterizations",
+                            "element": "span",
+                            "key": "p-features__item-val"
+                        },
+                        {
+                            "field": "price_product",
+                            "element": "div",
+                            "key": "products__price-new"
+                        },
+                        {
+                            "field": "image_product",
+                            "element": "img",
+                            "key": "lazy-img"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Аксессуары",
+            "is_pages": 1,
+            "data": [
+                {
+                    "url": "https://28bit.ru/category/aksessuary/",
+                    "elements": [
+                        {
+                            "field": "name_product",
+                            "element": "span",
+                            "key": "products__item-info-name"
+                        },
+                        {
+                            "field": "characterizations",
+                            "element": "span",
+                            "key": "p-features__item-val"
+                        },
+                        {
+                            "field": "price_product",
+                            "element": "div",
+                            "key": "products__price-new"
+                        },
+                        {
+                            "field": "image_product",
+                            "element": "img",
+                            "key": "lazy-img"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Клавиатуры и мыши",
+            "is_pages": 1,
+            "data": [
+                {
+                    "url": "https://28bit.ru/category/klaviatury-i-myshi/",
+                    "elements": [
+                        {
+                            "field": "name_product",
+                            "element": "span",
+                            "key": "products__item-info-name"
+                        },
+                        {
+                            "field": "characterizations",
+                            "element": "span",
+                            "key": "p-features__item-val"
+                        },
+                        {
+                            "field": "price_product",
+                            "element": "div",
+                            "key": "products__price-new"
+                        },
+                        {
+                            "field": "image_product",
+                            "element": "img",
+                            "key": "lazy-img"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
