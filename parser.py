@@ -13,13 +13,14 @@ dict_category = {} # Словарь категорий
 with open('pars_keys.json', 'r') as file:
     list_urls_and_keys = json.load(file)["list_urls_and_keys"]
 
-def fetch_data(url:str, element:str, key:str) -> tuple[int, list[str]]:
+def fetch_data(url:str, element:str, key:str, is_brands:bool=False) -> tuple[int, list[str]]:
     """Получение текста, который содержит конкретный элемент на странице
 
     Args:
         url (str): ссылка на сайт
         element (str): элемент HTML кода
         key (str): класс элемента HTML кода
+        is_brands (bool): пытаемся ли мы получить бренды
 
     Returns:
         count (int): количество найденных элементов на странице
@@ -38,9 +39,11 @@ def fetch_data(url:str, element:str, key:str) -> tuple[int, list[str]]:
     
     if element == "img":
         # Возвращаем список значений атрибута src
-        items = [item.get('data-src').split("/")[-1] for item in items if item.get('data-src') and 'products' in item.get('data-src')]
+        if not is_brands:
+            items = [item.get('data-src').split("/")[-1] for item in items if item.get('data-src') and 'products'  in item.get('data-src')]
+        else:
+            items = {item.get('alt'): item.get('data-src').split("/")[-1] for item in items if item.get('data-src') and 'brands' in item.get('data-src')}
         return len(items), items
-
     # Для других элементов возвращаем текст
     return len(items), [item.get_text(strip=True) for item in items]
 
@@ -246,6 +249,33 @@ def process_brands_in_records() -> None:
         json.dump(brand_data, json_file, ensure_ascii=False, indent=4)
     print("Добавлен файл brand.json")
 
+def correct_brands() -> None:
+    """Добавление к каждому бренду фотографии
+    """
+    # Получение названий фотографий брендов
+    _, results_img = fetch_data("https://28bit.ru/brands/", "img", "lazy-img", is_brands=True)
+    
+    # Читаем старые значения брендов
+    with open('./data/brand.json', 'r', encoding='utf-8') as file:
+        data = json.load(file)
+
+    # Обновляем записи с брендами
+    new_data = []
+    for row in tqdm(data, desc="Обновление брендов"):
+        brand_name = row["name_brand"]
+        row_new = {}
+        if brand_name != "28Bit":
+            row_new["name_brand"] = brand_name
+            row_new["image_brand"] = results_img[brand_name] if brand_name in results_img.keys() else "dummy200.png"       
+        else:
+            row_new["name_brand"] = "Tech Haven"
+            row_new["image_brand"] = "tech_haven.webp"
+        new_data.append(row_new)
+    
+    # Записываем результаты в файл
+    with open(f"./data/brand.json", 'w', encoding='utf-8') as json_file:
+        json.dump(new_data, json_file, ensure_ascii=False, indent=4)
+
 def import_data_in_database() -> None:
     """Внесение всех записей из файлов директории data в базу данных
     """
@@ -286,4 +316,5 @@ if __name__ == "__main__":
     parse_data()
     process_category_and_product_data()
     process_brands_in_records()
+    correct_brands()
     import_data_in_database()

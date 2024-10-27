@@ -1,269 +1,358 @@
 [
     {
-        "name_brand": "None"
+        "name_brand": "None",
+        "image_brand": "dummy200.png"
     },
     {
-        "name_brand": "ScaleFlux"
+        "name_brand": "ScaleFlux",
+        "image_brand": "39347.png"
     },
     {
-        "name_brand": "SINOTEX"
+        "name_brand": "SINOTEX",
+        "image_brand": "20232.png"
     },
     {
-        "name_brand": "JONSBO"
+        "name_brand": "JONSBO",
+        "image_brand": "20107.png"
     },
     {
-        "name_brand": "ASUS"
+        "name_brand": "ASUS",
+        "image_brand": "20108.jpg"
     },
     {
-        "name_brand": "RAZER"
+        "name_brand": "RAZER",
+        "image_brand": "20141.jpg"
     },
     {
-        "name_brand": "ASROCK"
+        "name_brand": "ASROCK",
+        "image_brand": "20124.jpg"
     },
     {
-        "name_brand": "ZOTAC"
+        "name_brand": "ZOTAC",
+        "image_brand": "20228.png"
     },
     {
-        "name_brand": "THERMALTAKE"
+        "name_brand": "THERMALTAKE",
+        "image_brand": "20114.jpg"
     },
     {
-        "name_brand": "ENERMAX"
+        "name_brand": "ENERMAX",
+        "image_brand": "20143.png"
     },
     {
-        "name_brand": "WESTERN DIGITAL"
+        "name_brand": "WESTERN DIGITAL",
+        "image_brand": "29331.png"
     },
     {
-        "name_brand": "BIOSTAR"
+        "name_brand": "BIOSTAR",
+        "image_brand": "20127.png"
     },
     {
-        "name_brand": "RASPBERRY PI"
+        "name_brand": "RASPBERRY PI",
+        "image_brand": "20115.jpg"
     },
     {
-        "name_brand": "COUGAR"
+        "name_brand": "COUGAR",
+        "image_brand": "20099.jpg"
     },
     {
-        "name_brand": "MagniumGear"
+        "name_brand": "MagniumGear",
+        "image_brand": "20121.png"
     },
     {
-        "name_brand": "MSI"
+        "name_brand": "MSI",
+        "image_brand": "20094.jpg"
     },
     {
-        "name_brand": "INTEL"
+        "name_brand": "INTEL",
+        "image_brand": "20075.jpg"
     },
     {
-        "name_brand": "ESONIC"
+        "name_brand": "ESONIC",
+        "image_brand": "20125.jpg"
     },
     {
-        "name_brand": "Lian Li"
+        "name_brand": "Lian Li",
+        "image_brand": "23493.jpg"
     },
     {
-        "name_brand": "INWIN"
+        "name_brand": "INWIN",
+        "image_brand": "20101.jpg"
     },
     {
-        "name_brand": "FRACTAL"
+        "name_brand": "FRACTAL",
+        "image_brand": "20096.jpg"
     },
     {
-        "name_brand": "QDION"
+        "name_brand": "QDION",
+        "image_brand": "20226.png"
     },
     {
-        "name_brand": "TOSHIBA"
+        "name_brand": "TOSHIBA",
+        "image_brand": "20089.jpg"
     },
     {
-        "name_brand": "CORSAIR"
+        "name_brand": "CORSAIR",
+        "image_brand": "20132.jpg"
     },
     {
-        "name_brand": "SEAGATE"
+        "name_brand": "SEAGATE",
+        "image_brand": "20082.jpg"
     },
     {
-        "name_brand": "ALSEYE"
+        "name_brand": "ALSEYE",
+        "image_brand": "20144.png"
     },
     {
-        "name_brand": "FSP"
+        "name_brand": "FSP",
+        "image_brand": "20222.png"
     },
     {
-        "name_brand": "CRUCIAL"
+        "name_brand": "CRUCIAL",
+        "image_brand": "20083.jpg"
     },
     {
-        "name_brand": "PALIT"
+        "name_brand": "PALIT",
+        "image_brand": "20229.png"
     },
     {
-        "name_brand": "ACER"
+        "name_brand": "ACER",
+        "image_brand": "27437.jpg"
     },
     {
-        "name_brand": "In-Win"
+        "name_brand": "In-Win",
+        "image_brand": "20119.jpg"
     },
     {
-        "name_brand": "AEROCOOL"
+        "name_brand": "AEROCOOL",
+        "image_brand": "20104.png"
     },
     {
-        "name_brand": "ADATA"
+        "name_brand": "ADATA",
+        "image_brand": "20076.jpg"
     },
     {
-        "name_brand": "ADATA XPG"
+        "name_brand": "ADATA XPG",
+        "image_brand": "dummy200.png"
     },
     {
-        "name_brand": "ADVANTECH"
+        "name_brand": "ADVANTECH",
+        "image_brand": "20136.jpg"
     },
     {
-        "name_brand": "TEAM GROUP"
+        "name_brand": "TEAM GROUP",
+        "image_brand": "20086.jpg"
     },
     {
-        "name_brand": "DEEPCOOL"
+        "name_brand": "DEEPCOOL",
+        "image_brand": "20110.jpg"
     },
     {
-        "name_brand": "BE QUIET"
+        "name_brand": "BE QUIET",
+        "image_brand": "20097.jpg"
     },
     {
-        "name_brand": "Eurocase"
+        "name_brand": "Eurocase",
+        "image_brand": "39533.jpg"
     },
     {
-        "name_brand": "Ablecom"
+        "name_brand": "Ablecom",
+        "image_brand": "31472.jpg"
     },
     {
-        "name_brand": "ZALMAN"
+        "name_brand": "ZALMAN",
+        "image_brand": "20100.png"
     },
     {
-        "name_brand": "SAPPHIRE"
+        "name_brand": "SAPPHIRE",
+        "image_brand": "20234.jpg"
     },
     {
-        "name_brand": "G.SKILL"
+        "name_brand": "G.SKILL",
+        "image_brand": "20131.jpg"
     },
     {
-        "name_brand": "MGG"
+        "name_brand": "MGG",
+        "image_brand": "dummy200.png"
     },
     {
-        "name_brand": "ZUMAX"
+        "name_brand": "ZUMAX",
+        "image_brand": "20227.jpg"
     },
     {
-        "name_brand": "SEGOTEP"
+        "name_brand": "SEGOTEP",
+        "image_brand": "23756.jpg"
     },
     {
-        "name_brand": "SAMSUNG"
+        "name_brand": "SAMSUNG",
+        "image_brand": "20085.jpg"
     },
     {
-        "name_brand": "PentaWave"
+        "name_brand": "PentaWave",
+        "image_brand": "dummy200.png"
     },
     {
-        "name_brand": "CHIEFTEC"
+        "name_brand": "CHIEFTEC",
+        "image_brand": "20112.jpg"
     },
     {
-        "name_brand": "Thermal Grizzly"
+        "name_brand": "Thermal Grizzly",
+        "image_brand": "37213.png"
     },
     {
-        "name_brand": "XIGMATEK"
+        "name_brand": "XIGMATEK",
+        "image_brand": "40178.png"
     },
     {
-        "name_brand": "SUPERMICRO"
+        "name_brand": "SUPERMICRO",
+        "image_brand": "20118.png"
     },
     {
-        "name_brand": "GIGABYTE"
+        "name_brand": "GIGABYTE",
+        "image_brand": "20079.jpg"
     },
     {
-        "name_brand": "SANDISK"
+        "name_brand": "SANDISK",
+        "image_brand": "21325.jpg"
     },
     {
-        "name_brand": "INNO3D"
+        "name_brand": "INNO3D",
+        "image_brand": "20230.jpg"
     },
     {
-        "name_brand": "AMD"
+        "name_brand": "AMD",
+        "image_brand": "20077.jpg"
     },
     {
-        "name_brand": "COLORFUL"
+        "name_brand": "COLORFUL",
+        "image_brand": "20092.jpg"
     },
     {
-        "name_brand": "OCPC"
+        "name_brand": "OCPC",
+        "image_brand": "20095.png"
     },
     {
-        "name_brand": "SILVERSTONE"
+        "name_brand": "SILVERSTONE",
+        "image_brand": "20117.png"
     },
     {
-        "name_brand": "KINGSTON"
+        "name_brand": "KINGSTON",
+        "image_brand": "20080.png"
     },
     {
-        "name_brand": "1STPLAYER"
+        "name_brand": "1STPLAYER",
+        "image_brand": "20106.jpg"
     },
     {
-        "name_brand": "FOXLINE"
+        "name_brand": "FOXLINE",
+        "image_brand": "20113.png"
     },
     {
-        "name_brand": "AFOX"
+        "name_brand": "AFOX",
+        "image_brand": "20126.png"
     },
     {
-        "name_brand": "EXEGATE"
+        "name_brand": "EXEGATE",
+        "image_brand": "20122.jpeg"
     },
     {
-        "name_brand": "SYNOLOGY"
+        "name_brand": "SYNOLOGY",
+        "image_brand": "20090.jpg"
     },
     {
-        "name_brand": "POWERCOLOR"
+        "name_brand": "POWERCOLOR",
+        "image_brand": "20233.jpg"
     },
     {
-        "name_brand": "AGI"
+        "name_brand": "AGI",
+        "image_brand": "20135.jpg"
     },
     {
-        "name_brand": "APACER"
+        "name_brand": "APACER",
+        "image_brand": "20078.jpg"
     },
     {
-        "name_brand": "ARCTIC COOLING"
+        "name_brand": "ARCTIC COOLING",
+        "image_brand": "20146.png"
     },
     {
-        "name_brand": "COOLERMASTER"
+        "name_brand": "COOLERMASTER",
+        "image_brand": "20103.png"
     },
     {
-        "name_brand": "PNY"
+        "name_brand": "PNY",
+        "image_brand": "20081.jpg"
     },
     {
-        "name_brand": "FragMachine"
+        "name_brand": "FragMachine",
+        "image_brand": "dummy200.png"
     },
     {
-        "name_brand": "POWER MAN"
+        "name_brand": "POWER MAN",
+        "image_brand": "20221.jpg"
     },
     {
-        "name_brand": "POWERCASE"
+        "name_brand": "POWERCASE",
+        "image_brand": "20098.jpg"
     },
     {
-        "name_brand": "GAINWARD"
+        "name_brand": "GAINWARD",
+        "image_brand": "20231.jpg"
     },
     {
-        "name_brand": "PATRIOT"
+        "name_brand": "PATRIOT",
+        "image_brand": "20091.png"
     },
     {
-        "name_brand": "28Bit"
+        "name_brand": "Tech Haven",
+        "image_brand": "dummy200.png"
     },
     {
-        "name_brand": "EMACS(Zippy)"
+        "name_brand": "EMACS(Zippy)",
+        "image_brand": "37182.png"
     },
     {
-        "name_brand": "RAIJINTEK"
+        "name_brand": "RAIJINTEK",
+        "image_brand": "20123.jpg"
     },
     {
-        "name_brand": "BTC"
+        "name_brand": "BTC",
+        "image_brand": "dummy200.png"
     },
     {
-        "name_brand": "KFA2"
+        "name_brand": "KFA2",
+        "image_brand": "20133.png"
     },
     {
-        "name_brand": "PHANTEKS"
+        "name_brand": "PHANTEKS",
+        "image_brand": "20116.jpg"
     },
     {
-        "name_brand": "ACD"
+        "name_brand": "ACD",
+        "image_brand": "20225.png"
     },
     {
-        "name_brand": "CHENBRO"
+        "name_brand": "CHENBRO",
+        "image_brand": "20105.jpg"
     },
     {
-        "name_brand": "MaxSun"
+        "name_brand": "MaxSun",
+        "image_brand": "28191.png"
     },
     {
-        "name_brand": "HIKVISION"
+        "name_brand": "HIKVISION",
+        "image_brand": "20087.png"
     },
     {
-        "name_brand": "NETAC"
+        "name_brand": "NETAC",
+        "image_brand": "20088.jpg"
     },
     {
-        "name_brand": "PCCOOLER"
+        "name_brand": "PCCOOLER",
+        "image_brand": "20142.png"
     },
     {
-        "name_brand": "ID-COOLING"
+        "name_brand": "ID-COOLING",
+        "image_brand": "20145.jpg"
     }
 ]

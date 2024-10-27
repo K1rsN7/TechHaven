@@ -31,6 +31,7 @@ CREATE TABLE `user` (
 CREATE TABLE `brand` (
     id_brand INT AUTO_INCREMENT,
     name_brand VARCHAR(200) NOT NULL,
+    image_brand text, 
     PRIMARY KEY (id_brand)
 );
 

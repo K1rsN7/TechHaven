@@ -1,0 +1,101 @@
+/* Section Gaps css
+============================================================================================ */
+.no-padding{
+    padding: 0;
+}
+.section_gap {
+    padding: 100px 0;
+    @media (max-width:991px){
+        padding: 80px 0;
+    }
+}
+.section_gap_top_75 {
+    padding: 75px 0;
+    @media (max-width:991px){
+        padding: 70px 0;
+    }
+}
+.section_gap_75 {
+    padding: 75px 0;
+    @media (max-width:991px){
+        padding: 70px 0;
+    }
+}
+.section_gap_top {
+    padding-top: 100px;
+    @media (max-width: 991px) {
+        padding-top: 80px;
+    }
+}
+
+.section_gap_bottom {
+    padding-bottom: 100px;
+    @media (max-width: 991px) {
+        padding-bottom: 80px;
+    }
+}
+.gray-bg{
+    background: #f9f9ff;
+}
+
+/* Section title css
+============================================================================================ */
+.section-title{
+    margin-bottom: 50px;
+    h1{
+        font-size: 36px;
+    }
+    p{
+        margin-bottom: 0;
+    }
+}
+
+/* Start Gradient Area css
+============================================================================================ */
+
+.gradient-bg {
+    @include gradient(90deg, $primary-color 0%, $primary-color2 100%);
+}
+.gradient-bg-reverse {
+    @include gradient(270deg, $primary-color 0%, $primary-color2 100%);
+}
+.gradient-color {
+    @include gradient(90deg, $primary-color 0%, $primary-color2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+/* Start primary btn css
+============================================================================================ */
+.primary-btn{
+    position: relative;
+    overflow: hidden;
+    color: #fff;
+    @extend .gradient-bg;
+    padding: 0 30px;
+    line-height: 50px;
+    border-radius: 50px;
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: 500;
+    cursor: pointer;
+    @include transition();
+    &:before{
+        position: absolute;
+        left: -145px;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        content: "";
+        background: #000;
+        opacity: 0;
+        @include transform(skew(40deg));
+        @include transition();
+    }
+    &:hover{
+        color: #fff;
+        &:before{
+            left: 180px;
+            opacity: .3;
+        }
+    }
+}

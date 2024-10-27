@@ -1,0 +1,144 @@
+/* banner area css
+============================================================================================ */
+.banner-area {
+	background: url(../img/banner/banner-bg.jpg) center no-repeat;
+	background-size: cover;
+	position: relative;
+	.fullscreen {
+		@media (max-width: 768px) {
+			height: 650px !important;
+		}
+	}
+	.active-banner-slider {
+		.owl-nav {
+			position: absolute;
+			right: 0;
+			bottom: -200px;
+			@media (max-width: 1920px) {
+				right: -115px;
+			}
+			@media (max-width: 1680px) {
+				right: 0px;
+			}
+			@media (max-width: 991px) {
+				display: none;
+			}
+			.owl-prev,
+			.owl-next {
+				display: inline-block;
+				margin: 10px;
+				opacity: .5;
+				@include transition();
+				&:hover {
+					opacity: 1;
+				}
+			}
+		}
+	}
+	.banner-content {
+		padding-left: 10px;
+		@media (max-width: 991px) {
+			padding-left: 0;
+		}
+		h1 {
+			font-size: 60px;
+			line-height: 66px;
+			font-weight: 700;
+			margin-bottom: 30px;
+			@media (max-width: 767px) {
+				font-size: 35px;
+				line-height: 46px;
+			}
+		}
+		p {
+			margin: 0;
+		}
+	}
+	.banner-img {
+		@media (max-width: 991px) {
+			display: none;
+		}
+	}
+}
+.add-bag {
+	margin-top: 30px;
+	.add-btn {
+		height: 50px;
+		width: 50px;
+		line-height: 52px;
+		text-align: center;
+		@extend .gradient-bg;
+		border-radius: 50%;
+		box-shadow: 0 10px 20px rgba(255, 108, 0, 0.2);
+		span {
+			@include transform(rotate(45deg));
+			display: inline-block;
+			color: #fff;
+		}
+	}
+	.add-text {
+		padding-left: 15px;
+		font-size: 12px;
+		font-family: $title-font;
+		font-weight: 500;
+		color: $title-color;
+	}
+}
+
+//------- Start Bread Crumb --------//
+
+.organic-breadcrumb {
+	background: url(../../img/banner-bg.jpg) center no-repeat;
+	background-size: cover;
+	padding-top: 130px;
+	@media (max-width: 991px) {
+		padding-top: 80px;
+	}
+	@media (max-width: 767px) {
+		background: none;
+		@include gradient(90deg, $primary-color 0%, $primary-color2 100%);
+	}
+}
+#category {
+	.organic-breadcrumb {
+		margin-bottom: 100px;
+	}
+}
+.breadcrumb-banner {
+	padding: 90px 0 100px 0;
+	h1 {
+		font-weight: 600;
+		color: $white;
+		@media (max-width: 767px) {
+			font-size: 30px;
+		}
+	}
+	p {
+		margin-bottom: 0;
+		color: $white;
+	}
+	nav {
+		a {
+			display: inline-block;
+			color: $white;
+			font-weight: 400;
+			span {
+				display: inline-block;
+				margin: 0 10px;
+			}
+		}
+	}
+	.col-first {
+		padding-right: 15px;
+		@media (max-width: 1680px) {
+			padding-right: 40px;
+		}
+		@media (max-width: 991px) {
+			width: 48%;
+		}
+		@media (max-width: 767px) {
+			width: 100%;
+		}
+	}
+}
+//------- End Bread Crumb --------//
