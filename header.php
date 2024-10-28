@@ -52,7 +52,7 @@
 					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
 						<ul class="nav navbar-nav menu_nav ml-auto">
 							<li class="nav-item <?php if ($_GET["page"] == "content" or !isset($_GET["page"])) echo "active"?>"><a class="nav-link" href="index.php?page=content">О магазине</a></li>
-							<li class="nav-item <?php if ($_GET["page"] == "catalog") echo "active"?>"><a class="nav-link" href="index.php?page=catalog">Каталог товаров</a></li>
+							<li class="nav-item <?php if ($_GET["page"] == "shop" or $_GET["page"] == "sort") echo "active"?>"><a class="nav-link" href="index.php?page=shop">Каталог товаров</a></li>
 			
 							<li class="nav-item <?php if ($_GET["page"] == "contact") echo "active"?>"><a class="nav-link" href="index.php?page=contact">Контакты</a></li>
 						</ul>
