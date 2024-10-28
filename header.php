@@ -51,10 +51,10 @@
 					<!-- Collect the nav links, forms, and other content for toggling -->
 					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
 						<ul class="nav navbar-nav menu_nav ml-auto">
-							<li class="nav-item active"><a class="nav-link" href="index.php?page=content">О магазине</a></li>
-							<li class="nav-item"><a class="nav-link" href="index.php?page=catalog">Каталог товаров</a></li>
+							<li class="nav-item <?php if ($_GET["page"] == "content" or !isset($_GET["page"])) echo "active"?>"><a class="nav-link" href="index.php?page=content">О магазине</a></li>
+							<li class="nav-item <?php if ($_GET["page"] == "catalog") echo "active"?>"><a class="nav-link" href="index.php?page=catalog">Каталог товаров</a></li>
 			
-							<li class="nav-item"><a class="nav-link" href="index.php?page=contact">Контакты</a></li>
+							<li class="nav-item <?php if ($_GET["page"] == "contact") echo "active"?>"><a class="nav-link" href="index.php?page=contact">Контакты</a></li>
 						</ul>
 						<ul class="nav navbar-nav navbar-right">
 							<li class="nav-item"><a href="index.php?page=cart" class="cart"><span class="ti-bag"></span></a></li>
@@ -65,7 +65,4 @@
 			</nav>
 		</div>
 	</header>
-	<!-- End Header Area -->
-     <!-- start banner Area -->
-	
-	<!-- End banner Area -->
+</body>

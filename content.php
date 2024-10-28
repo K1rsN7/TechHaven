@@ -323,7 +323,7 @@
 				echo '<div class="col-lg-3 col-md-6">
 						<div class="single-product">
 							<a class="col single-img" href="#">
-								<img class="img-fluid d-block mx-auto" src="./img/brands/'.$item['image_brand'].'" style="max-height: 65px; height: auto; width: auto;" alt="">
+								<img class="img-fluid d-block mx-auto" src="./img/brands/'.$item['image_brand'].'" style="max-height: 62px; height: auto; width: auto;" alt="">
 							</a>
 							<div class="product-details" align="center">
 								<h6>'.$item['name_brand'].'</h6>
