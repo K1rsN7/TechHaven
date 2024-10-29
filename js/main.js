@@ -12,7 +12,7 @@ $(document).ready(function(){
 	$(".fullscreen").css("height", window_height)
     $(".fitscreen").css("height", fitscreen);
 
-  //------- Active Nice Select --------//
+  //------- Active Nice .filter-barelect --------//
 
     $('select').niceSelect();
 
