@@ -6,7 +6,7 @@
     $sql_category=$link->query("SELECT c.id_category, c.name_category, count(p.name_product) as count FROM product p LEFT JOIN category c ON p.id_category = c.id_category GROUP BY c.name_category ORDER BY count DESC");
 
     if(!isset($_SESSION['sql_zap_product'])){
-        $_SESSION['sql_zap_product']="SELECT p.id_product, p.image, p.name_product, p.description, p.price, p.delivery_days, b.id_brand, b.name_brand, b.image_brand FROM product p LEFT JOIN category c ON p.id_category = c.id_category LEFT JOIN brand b ON p.id_brand = b.id_brand ";
+        $_SESSION['sql_zap_product']="SELECT p.id_product, p.image, p.name_product, p.description, p.price, p.delivery_days, b.id_brand, b.name_brand, b.image_brand, c.id_category, c.name_category FROM product p LEFT JOIN category c ON p.id_category = c.id_category LEFT JOIN brand b ON p.id_brand = b.id_brand";
         $_SESSION['count_products_on_page'] = 6;
     }
 
@@ -104,13 +104,18 @@
         $sql_product_count=(int)$link->query("SELECT COUNT(*) FROM ($request) AS subquery")->fetch_row()[0];
         $total_pages = (int)divideWithRemainder($sql_product_count, $_SESSION["count_products_on_page"]);
         require('./shop.php');
+    } elseif ($page=='single-product'){
+        $id=(int)$_GET['id_product'];
+        $sql_text=$_SESSION['sql_zap_product'];
+        $product_data = $link->query($sql_text . " WHERE p.id_product = " . $id);
+        $product_id = $product_data->fetch_assoc();
+        require('./single-product.php');
     }
-    if ($sql_product) {
-        $products_to_show = array_slice($sql_product->fetch_all(MYSQLI_ASSOC), 0, $_SESSION['count_products']);
+    elseif ($page=='cart'){
+        require('./cart.php');
     }
 
     require('./footer.php');
-
 
     function buildUrl() {
         // Собираем параметры для URL

@@ -247,6 +247,8 @@
 	<!-- start features Area -->
 	<section class="features-area section_gap">
 		<div class="container">
+		<h1 align="center">Наши преимущества</h1>
+		<br>
 			<div class="row features-inner">
 				<!-- single features -->
 				<div class="col-lg-3 col-md-6 col-sm-6">
@@ -305,7 +307,6 @@
 		for ($i = 0; $i < count($brands); $i += 8) {
 			echo '<div class="single-product-slider"> 
 			<div class="container">
-				
 				<div class="row justify-content-center">
 					<div class="col-lg-6 text-center">
 						<div class="section-title">
@@ -322,7 +323,7 @@
 				$item = $brands[$i+$y];
 				echo '<div class="col-lg-3 col-md-6">
 						<div class="single-product">
-							<a class="col single-img" href="#">
+							<a class="col single-img" href="index.php?page=sort&b_ids[]='.$item["id_brand"].'">
 								<img class="img-fluid d-block mx-auto" src="./img/brands/'.$item['image_brand'].'" style="max-height: 62px; height: auto; width: auto;" alt="">
 							</a>
 							<div class="product-details" align="center">

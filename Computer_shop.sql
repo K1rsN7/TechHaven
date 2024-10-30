@@ -19,6 +19,7 @@ CREATE TABLE `category` (
 CREATE TABLE `user` (
     id_user INT AUTO_INCREMENT,
     username VARCHAR(100) NOT NULL,
+    image_user text,
     email VARCHAR(100) NOT NULL UNIQUE,
     password VARCHAR(255) NOT NULL,
     role ENUM('customer', 'admin') DEFAULT 'customer',
@@ -92,13 +93,11 @@ CREATE TABLE `order_item` (
 -- Отзывы
 CREATE TABLE `review` (
     id_review INT AUTO_INCREMENT,
-    id_product INT,
     id_user int,
     rating INT CHECK (rating >= 1 AND rating <= 5),
-    comment TEXT,
+    comment VARCHAR(250),
     review_date DATE DEFAULT CURRENT_DATE(),
     PRIMARY KEY (id_review),
-    FOREIGN KEY (id_product) REFERENCES `product`(id_product),
     FOREIGN KEY (id_user) REFERENCES `user`(id_user)
 );
 
