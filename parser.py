@@ -1,3 +1,4 @@
+import faker.utils
 import requests
 from bs4 import BeautifulSoup
 import json
@@ -6,6 +7,18 @@ import g4f
 from tqdm import tqdm
 import pandas as pd
 from sqlalchemy import create_engine
+from faker import Faker
+import random
+from datetime import datetime, timedelta
+
+# Подключение к базе данных
+with open("./config.json", "r") as f:
+        data = json.load(f)
+        DB_USERNAME = data["DB_USER"]
+        DB_PASSWORD = data["DB_PASSWORD"]
+        HOSTNAME = f"{data["DB_HOST"]}:{data["DB_PORT"]}"
+        DATABASE_NAME = data["DB_NAME"]
+ENGINE = create_engine(f"mysql+pymysql://{DB_USERNAME}:{DB_PASSWORD}@{HOSTNAME}/{DATABASE_NAME}")
 
 dict_category = {} # Словарь категорий
 
@@ -276,23 +289,8 @@ def correct_brands() -> None:
     with open(f"./data/brand.json", 'w', encoding='utf-8') as json_file:
         json.dump(new_data, json_file, ensure_ascii=False, indent=4)
 
-def import_data_in_database() -> None:
-    """Внесение всех записей из файлов директории data в базу данных
-    """
-    # Получение данных для подключения к базе данных
-    with open("config.json", "r") as f:
-        data = json.load(f)
-        db_username = data["DB_USER"]
-        db_password = data["DB_PASSWORD"]
-        hostname = f"{data["DB_HOST"]}:{data["DB_PORT"]}"
-        database_name = data["DB_NAME"]
-
-    # Настройка подключения к базе данных
-    engine = create_engine(f"mysql+pymysql://{db_username}:{db_password}@{hostname}/{database_name}")
-
-    # Импорт данных из CSV файлов в соответствующие таблицы
-    def import_data_from_json(file_path:str, table_name:str) -> None:
-        """Чтение данных из файла и последующий импорт их
+def import_data_from_json(file_path:str, table_name:str) -> None:
+        """Чтение данных из файла json и последующий импорт их
 
         Args:
             file_path (str): путь до файла
@@ -300,16 +298,100 @@ def import_data_in_database() -> None:
         """
         
         df = pd.read_json(file_path)
-        df.to_sql(table_name, con=engine, if_exists='append', index=False)
+        df.to_sql(table_name, con=ENGINE, if_exists='append', index=False)
 
+def generate_user() -> None:
+    """Генерация записей с пользователями
+    """
+    # Получаем список всех изображений в папке
+    image_folder = './img/people'
+    image_files = os.listdir(image_folder)
+    emails = [] # Для генерации уникальных почт
+    faker = Faker()
+    
+    data = [] # Все записи в базу данных
+    
+    for i in range(len(image_files)):
+        username = faker.user_name()
+        image_user = image_files[i]
+        while True:
+            email = faker.email()
+            if email not in emails:
+                emails.append(email)
+                break
+        password = faker.password()
+        role = 'customer'
+        user_data = {
+            "username": username,
+            "image_user": image_user,
+            "email": email,
+            "password": password,
+            "role": role
+        }
+        data.append(user_data)
+        
+    with open(f"./data/user.json", 'w', encoding='utf-8') as json_file:
+        json.dump(data, json_file, ensure_ascii=False, indent=4)
+    
+    print("Созданы пользователи сайта")
+
+def generate_review() -> None:
+    """Генерация отзывов о магазине
+    """
+    image_folder = './img/people'
+    image_files = os.listdir(image_folder)
+    def generate_random_date(start_date:datetime, end_date:datetime) -> datetime:
+        """Генерация случайной даты в диапазоне
+
+        Args:
+            start_date (datetime): начальная дата
+            end_date (datetime): конечная дата
+        """
+        # Вычисляем разницу между датами
+        delta = end_date - start_date
+        # Генерируем случайное количество дней в диапазоне
+        random_days = random.randint(0, delta.days)
+        # Возвращаем случайную дату
+        return start_date + timedelta(days=random_days)
+    
+    data = []
+    for i in tqdm(range(len(image_files)), desc="Генерация отзывов..."):
+        rating = random.randint(4, 5)
+        messages = [
+            {"role": "user", "content": f"Сгенерируй отзыв на русском о сайте не более 250 символов. Информация о сайте: Tech Haven - интернет магазин компьютеров и комплектующих по низкой цене.  Самовывоз в день заказа. Быстрая доставка по Нижнему Новгороду. "}
+        ]
+        # Выполнение запроса и получение ответа
+        comment = g4f.ChatCompletion.create(
+            model=g4f.models.gpt_4o,  # Используем модель GPT-4o
+            messages=messages
+        )
+        review_data = {
+            "id_user": i+1,
+            "rating": rating,
+            "comment": comment,
+            "review_date": generate_random_date(datetime(2023, 1, 1),  datetime(2024, 10, 31)).strftime('%Y-%m-%d'),
+        }
+        data.append(review_data)
+
+    with open(f"./data/review.json", 'w', encoding='utf-8') as json_file:
+        json.dump(data, json_file, ensure_ascii=False, indent=4)
+
+def import_data_in_database() -> None:
+    """Внесение всех записей из файлов директории data в базу данных
+    """
+    
     # Добавление всех записей в базу данных
     for file in sorted(os.listdir("./data")):
         if file.startswith("product_"):
             import_data_from_json(f"./data/{file}", "product")
-        elif file.startswith("brand"):
-            import_data_from_json(f"./data/{file}", "brand")
-        elif file.startswith("category"):
-            import_data_from_json(f"./data/{file}", "category")
+        elif file.startswith("user"):
+            import_data_from_json(f"./data/{file}", "user")
+            import_data_from_json(f"./data/review.json", "review")
+            print(f"Импортированы данные из review.json в базу данных")
+        elif file.startswith("review"):
+            continue
+        else:
+            import_data_from_json(f"./data/{file}", file.split(".")[0])
         print(f"Импортированы данные из {file[:-5]} в базу данных")
 
 if __name__ == "__main__":
@@ -317,4 +399,6 @@ if __name__ == "__main__":
     process_category_and_product_data()
     process_brands_in_records()
     correct_brands()
+    generate_user()
+    generate_review()
     import_data_in_database()

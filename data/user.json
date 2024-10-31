@@ -1,0 +1,100 @@
+[
+    {
+        "username": "yprice",
+        "image_user": "images2.jpg",
+        "email": "anthonynelson@example.org",
+        "password": ")w3Uzb0Yn2",
+        "role": "customer"
+    },
+    {
+        "username": "gmontes",
+        "image_user": "muzhskaja-ava-6.webp",
+        "email": "abennett@example.net",
+        "password": "^2_^Nt@9NT",
+        "role": "customer"
+    },
+    {
+        "username": "kellerkyle",
+        "image_user": "1c292db1ed2d32ac50bb753493c4e3b3.jpg",
+        "email": "owest@example.org",
+        "password": "C1xYjSEc)t",
+        "role": "customer"
+    },
+    {
+        "username": "raymond29",
+        "image_user": "muzhskaja-ava-15-1024x977.webp",
+        "email": "wchristensen@example.org",
+        "password": "%#S5ZjWb_J",
+        "role": "customer"
+    },
+    {
+        "username": "dianeking",
+        "image_user": "muzhskaja-ava-7.webp",
+        "email": "fkim@example.com",
+        "password": "@4X+kyQz)2",
+        "role": "customer"
+    },
+    {
+        "username": "medinacharles",
+        "image_user": "images6.jpg",
+        "email": "cynthia72@example.com",
+        "password": "FZ*_3ZWgHF",
+        "role": "customer"
+    },
+    {
+        "username": "alexmorrison",
+        "image_user": "muzhskaja-ava-17-1024x977.webp",
+        "email": "larsonrandy@example.com",
+        "password": "&nT3O5SpF^",
+        "role": "customer"
+    },
+    {
+        "username": "sylviareynolds",
+        "image_user": "muzhskaja-ava-16-1024x977.webp",
+        "email": "hsmith@example.net",
+        "password": "rrF6w#Sc!!",
+        "role": "customer"
+    },
+    {
+        "username": "psellers",
+        "image_user": "images3.jpg",
+        "email": "austinchristina@example.com",
+        "password": "C^18Xryg)^",
+        "role": "customer"
+    },
+    {
+        "username": "brianakim",
+        "image_user": "muzhskaja-ava-8.webp",
+        "email": "gravesalyssa@example.net",
+        "password": "073B9P+i*&",
+        "role": "customer"
+    },
+    {
+        "username": "jeanetterush",
+        "image_user": "911f6f6b6aa6f6c72bfe416d2d414fa8.jpg",
+        "email": "angelarogers@example.com",
+        "password": "#ayiGd8Lo3",
+        "role": "customer"
+    },
+    {
+        "username": "flopez",
+        "image_user": "muzhskaja-ava-31.jpg",
+        "email": "rebeccawright@example.com",
+        "password": "f_qd6FJjOw",
+        "role": "customer"
+    },
+    {
+        "username": "michael27",
+        "image_user": "images5.jpg",
+        "email": "michaelhernandez@example.net",
+        "password": "T!9EdTkpQG",
+        "role": "customer"
+    },
+    {
+        "username": "adam75",
+        "image_user": "0656d9c7610d11eea96aaaafe6635749_upscaled.jpg",
+        "email": "saraortiz@example.org",
+        "password": "xQ_$0J5gxh",
+        "role": "customer"
+    }
+]

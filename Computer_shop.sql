@@ -95,14 +95,8 @@ CREATE TABLE `review` (
     id_review INT AUTO_INCREMENT,
     id_user int,
     rating INT CHECK (rating >= 1 AND rating <= 5),
-    comment VARCHAR(250),
+    comment VARCHAR(250) NOT NULL,
     review_date DATE DEFAULT CURRENT_DATE(),
     PRIMARY KEY (id_review),
     FOREIGN KEY (id_user) REFERENCES `user`(id_user)
 );
-
-
-
-
-
-
