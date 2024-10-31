@@ -96,13 +96,15 @@ d
                                         <img src="./img/people/'.$review["image_user"].'" class="rounded-circle" style="width: 70px; height: 70px;" alt="">
                                     </div>
                                     <div class="media-body">
-                                        <h4>'.$review['username'].'</h4>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                    </div>
+                                        <h4>'.$review['username'].'</h4>';
+                                        for ($i = 0; $i < 5; $i++) {
+                                            if ($i < $review["rating"]) {
+                                                echo '<i class="fa fa-star"></i>'; // Полная звезда
+                                            } else {
+                                                echo '<i class="fa fa-star-o"></i>'; // Пустая звезда
+                                            }
+                                        }
+                                    echo '</div>
                                 </div>
                                 <p>'.$review['comment'].'</p>
                             </div>
@@ -120,7 +122,7 @@ d
                 </a>
             <!-- Добавьте дополнительные отзывы по аналогии -->
     </div>
-   
+   <br>
     <!-- Контролы для навигации -->
 </div>
 

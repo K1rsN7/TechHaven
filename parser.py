@@ -312,7 +312,7 @@ def generate_user() -> None:
     data = [] # Все записи в базу данных
     
     for i in range(len(image_files)):
-        username = faker.user_name()
+        username = " ".join([faker.last_name_male(), faker.name_male()])
         image_user = image_files[i]
         while True:
             email = faker.email()
