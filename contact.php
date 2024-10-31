@@ -1,5 +1,3 @@
-d
-
 <!-- Start Banner Area -->
 <section class="banner-area organic-breadcrumb">
 		<div class="container">
