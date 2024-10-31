@@ -250,7 +250,7 @@ def process_brands_in_records() -> None:
                             row["id_brand"] = key if key else 1
                             row["id_category"] = id_category
                             all_rows.append(row)
-                        with open(f"./data/{file}", 'w', encoding='utf-8') as json_file:
+                        with open(f"./data/product_{file}", 'w', encoding='utf-8') as json_file:
                             json.dump(all_rows, json_file, ensure_ascii=False, indent=4)
     
     # Формирование файла для последующего импорта брендов в базу данных

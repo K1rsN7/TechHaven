@@ -354,5 +354,13 @@
     {
         "name_brand": "ID-COOLING",
         "image_brand": "20145.jpg"
+    },
+    {
+        "name_brand": "AOC",
+        "image_brand": "20129.jpg"
+    },
+    {
+        "name_brand": "PHILIPS",
+        "image_brand": "20130.jpg"
     }
 ]

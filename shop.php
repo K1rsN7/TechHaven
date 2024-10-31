@@ -170,9 +170,9 @@
 								if ($count > ($current_page - 1) * $products_per_page && $count <= $current_page * $products_per_page) {
 						?>
 						<div class="col-lg-4 col-md-6">
-							<div class="single-product">
-								<img class="img-fluid" src="./img/<?php echo $product['image'] ?>" alt="">
-								<div class="product-details">
+							<div class="single-product d-flex flex-column justify-content-between" style="height: 600px;">
+								<img class="img-fluid" src="./img/<?php echo $product['image'] ?>" style="height:auto; width: auto" alt="">
+								<div class="product-details d-flex flex-column justify-content-between">
 									<h6><?php echo $product['name_product'] ?></h6>
 									<div class="price">
 										<br>

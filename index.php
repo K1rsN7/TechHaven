@@ -26,7 +26,7 @@
     $sql_text=$_SESSION['sql_zap_product'];
     $sql_product=$link->query($sql_text);
     $sql_product_count=$link->query("SELECT COUNT(*) FROM ($sql_text) AS subquery")->fetch_row()[0];
-    $sql_brands=$link->query("SELECT subquery.id_brand, subquery.name_brand, subquery.image_brand, COUNT(subquery.id_product) as count FROM ($sql_text) AS subquery GROUP BY subquery.id_brand, subquery.name_brand, subquery.image_brand");
+    $sql_brands=$link->query("SELECT subquery.id_brand, subquery.name_brand, subquery.image_brand, COUNT(subquery.id_product) as count FROM ($sql_text) AS subquery GROUP BY subquery.id_brand, subquery.name_brand, subquery.image_brand ORDER BY subquery.name_brand");
     $sql_delivery=$link->query("SELECT subquery.delivery_days, COUNT(subquery.id_product) as count FROM ($sql_text) AS subquery GROUP BY subquery.delivery_days");
     $sql_min_price=$link->query("SELECT MIN(subquery.price) FROM ($sql_text) AS subquery");
     $sql_max_price=$link->query("SELECT MAX(subquery.price) FROM ($sql_text) AS subquery");

@@ -10,14 +10,14 @@
 									<h1>Новые<br>Компьютеры</h1>
 									<p>Откройте для себя последние модели компьютеров, которые обеспечивают максимальную производительность и стильный дизайн.</p>
 									<div class="add-bag d-flex align-items-center">
-										<a class="add-btn" href=""><span class="lnr lnr-magnifier"></span></a>
-										<span class="add-text text-uppercase">Посмотреть товары</span>
+										<a class="add-btn" href="index.php?page=sort&id_cat=1"><span class="lnr lnr-magnifier"></span></a>
+										<span class="add-text text-uppercase" >Посмотреть товары</span>
 									</div>
 								</div>
 							</div>
 							<div class="col-lg-7">
 								<div class="banner-img">
-									<img class="img-fluid" src="./img/icon/icon-pc.png" style="height: 550px; width: auto" alt="">
+									<img class="img-fluid" src="./img/icon/icon-pc.png" style="height: 550px; width: auto" alt="" >
 								</div>
 							</div>
 						</div>
@@ -28,7 +28,7 @@
 									<h1>Мощные<br>Процессоры</h1>
 									<p>Процессоры нового поколения с высокой тактовой частотой и многопоточностью для любых задач — от игр до профессиональной работы.</p>
 									<div class="add-bag d-flex align-items-center">
-										<a class="add-btn" href=""><span class="lnr lnr-magnifier"></span></a>
+										<a class="add-btn" href="index.php?page=sort&id_cat=2"><span class="lnr lnr-magnifier"></span></a>
 										<span class="add-text text-uppercase">Посмотреть товары</span>
 									</div>
 								</div>
@@ -46,7 +46,7 @@
 									<h1>Эффективные<br>Видеокарты</h1>
 									<p>Видеокарты, способные справиться с самыми требовательными играми и приложениями, обеспечивая великолепную графику и плавный игровой процесс.</p>
 									<div class="add-bag d-flex align-items-center">
-										<a class="add-btn" href=""><span class="lnr lnr-magnifier"></span></a>
+										<a class="add-btn" href="index.php?page=sort&id_cat=3"><span class="lnr lnr-magnifier"></span></a>
 										<span class="add-text text-uppercase">Посмотреть товары</span>
 									</div>
 								</div>
@@ -64,7 +64,7 @@
 									<h1>Современные<br>Материнские платы</h1>
 									<p>Материнские платы с поддержкой новейших технологий и интерфейсов, обеспечивающие стабильную работу всех компонентов системы.</p>
 									<div class="add-bag d-flex align-items-center">
-										<a class="add-btn" href=""><span class="lnr lnr-magnifier"></span></a>
+										<a class="add-btn" href="index.php?page=sort&id_cat=4"><span class="lnr lnr-magnifier"></span></a>
 										<span class="add-text text-uppercase">Посмотреть товары</span>
 									</div>
 								</div>
@@ -82,7 +82,7 @@
 									<h1>Быстрая<br>Оперативная память</h1>
 									<p>Оперативная память с высокой пропускной способностью для быстрой обработки данных и многозадачности.</p>
 									<div class="add-bag d-flex align-items-center">
-										<a class="add-btn" href=""><span class="lnr lnr-magnifier"></span></a>
+										<a class="add-btn" href="index.php?page=sort&id_cat=5"><span class="lnr lnr-magnifier"></span></a>
 										<span class="add-text text-uppercase">Посмотреть товары</span>
 									</div>
 								</div>
@@ -100,7 +100,7 @@
 									<h1>Быстрые<br>Диски SSD</h1>
 									<p>SSD-накопители, которые обеспечивают молниеносную загрузку операционной системы и приложений, значительно ускоряя работу вашего компьютера.</p>
 									<div class="add-bag d-flex align-items-center">
-										<a class="add-btn" href=""><span class="lnr lnr-magnifier"></span></a>
+										<a class="add-btn" href="index.php?page=sort&id_cat=6"><span class="lnr lnr-magnifier"></span></a>
 										<span class="add-text text-uppercase">Посмотреть товары</span>
 									</div>
 								</div>
@@ -118,7 +118,7 @@
 									<h1>Надежные<br>Диски HDD</h1>
 									<p>HDD-диски с большим объемом хранения для архивирования данных и хранения мультимедийных файлов.</p>
 									<div class="add-bag d-flex align-items-center">
-										<a class="add-btn" href=""><span class="lnr lnr-magnifier"></span></a>
+										<a class="add-btn" href="index.php?page=sort&id_cat=7"><span class="lnr lnr-magnifier"></span></a>
 										<span class="add-text text-uppercase">Посмотреть товары</span>
 									</div>
 								</div>
@@ -136,7 +136,7 @@
 									<h1>Эффективные<br>Блоки питания</h1>
 									<p>Блоки питания с высокой эффективностью и надежностью, обеспечивающие стабильное питание всех компонентов вашего ПК.</p>
 									<div class="add-bag d-flex align-items-center">
-										<a class="add-btn" href=""><span class="lnr lnr-magnifier"></span></a>
+										<a class="add-btn" href="index.php?page=sort&id_cat=8"><span class="lnr lnr-magnifier"></span></a>
 										<span class="add-text text-uppercase">Посмотреть товары</span>
 									</div>
 								</div>
@@ -154,7 +154,7 @@
 									<h1>Стильные<br>Корпуса компьютеров</h1>
 									<p>Корпуса с современным дизайном и отличной вентиляцией для создания уникальной сборки вашего компьютера.</p>
 									<div class="add-bag d-flex align-items-center">
-										<a class="add-btn" href=""><span class="lnr lnr-magnifier"></span></a>
+										<a class="add-btn" href="index.php?page=sort&id_cat=9"><span class="lnr lnr-magnifier"></span></a>
 										<span class="add-text text-uppercase">Посмотреть товары</span>
 									</div>
 								</div>
@@ -172,7 +172,7 @@
 									<h1>Мощные<br>Кулеры</h1>
 									<p>Кулеры, которые обеспечивают эффективное охлаждение даже самых мощных компонентов, предотвращая перегрев.</p>
 									<div class="add-bag d-flex align-items-center">
-										<a class="add-btn" href=""><span class="lnr lnr-magnifier"></span></a>
+										<a class="add-btn" href="index.php?page=sort&id_cat=10"><span class="lnr lnr-magnifier"></span></a>
 										<span class="add-text text-uppercase">Посмотреть товары</span>
 									</div>
 								</div>
@@ -190,7 +190,7 @@
 									<h1>Яркие<br>Мониторы</h1>
 									<p>Мониторы с высоким разрешением и яркими цветами для комфортной работы и погружения в игры.</p>
 									<div class="add-bag d-flex align-items-center">
-										<a class="add-btn" href=""><span class="lnr lnr-magnifier"></span></a>
+										<a class="add-btn" href="index.php?page=sort&id_cat=12"><span class="lnr lnr-magnifier"></span></a>
 										<span class="add-text text-uppercase">Посмотреть товары</span>
 									</div>
 								</div>
@@ -208,7 +208,7 @@
 									<h1>Полезные<br>Аксессуары</h1>
 									<p>Аксессуары, которые дополнят ваш компьютер и улучшат его функциональность — от кабелей до адаптеров.</p>
 									<div class="add-bag d-flex align-items-center">
-										<a class="add-btn" href=""><span class="lnr lnr-magnifier"></span></a>
+										<a class="add-btn" href="index.php?page=sort&id_cat=13"><span class="lnr lnr-magnifier"></span></a>
 										<span class="add-text text-uppercase">Посмотреть товары</span>
 									</div>
 								</div>
@@ -226,7 +226,7 @@
 									<h1>Эргономичная<br>Периферия</h1>
 									<p>Клавиатуры и мыши, разработанные для удобства использования и повышения продуктивности, идеально подходят как для работы, так и для игр.</p>
 									<div class="add-bag d-flex align-items-center">
-										<a class="add-btn" href=""><span class="lnr lnr-magnifier"></span></a>
+										<a class="add-btn" href="index.php?page=sort&id_cat=14"><span class="lnr lnr-magnifier"></span></a>
 										<span class="add-text text-uppercase">Посмотреть товары</span>
 									</div>
 								</div>
