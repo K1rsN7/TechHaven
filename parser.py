@@ -1,4 +1,4 @@
-import faker.utils
+import hashlib
 import requests
 from bs4 import BeautifulSoup
 import json
@@ -319,7 +319,8 @@ def generate_user() -> None:
             if email not in emails:
                 emails.append(email)
                 break
-        password = faker.password()
+        password = faker.password().encode("utf8")
+        password = hashlib.md5(password).hexdigest()
         role = 'customer'
         user_data = {
             "username": username,
@@ -395,10 +396,10 @@ def import_data_in_database() -> None:
         print(f"Импортированы данные из {file[:-5]} в базу данных")
 
 if __name__ == "__main__":
-    parse_data()
-    process_category_and_product_data()
-    process_brands_in_records()
-    correct_brands()
+    # parse_data()
+    # process_category_and_product_data()
+    # process_brands_in_records()
+    # correct_brands()
     generate_user()
-    generate_review()
+    # generate_review()
     import_data_in_database()

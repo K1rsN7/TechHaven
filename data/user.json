@@ -1,107 +1,100 @@
 [
     {
-        "username": "Davis Joel May",
+        "username": "King James Edwards",
         "image_user": "images2.jpg",
-        "email": "christine65@example.org",
-        "password": "*Qv3I0oq0z",
+        "email": "smithdale@example.com",
+        "password": "82fe9ba375ba865c7026d476502207a5",
         "role": "customer"
     },
     {
-        "username": "Mitchell Corey Blanchard",
+        "username": "Walker Bryce Lambert",
         "image_user": "muzhskaja-ava-6.webp",
-        "email": "wattssheila@example.com",
-        "password": "*7tSg44nOR",
+        "email": "zhoward@example.net",
+        "password": "edc1f816011f5871b95862f87f2b5d21",
         "role": "customer"
     },
     {
-        "username": "Lucas Frank Ward",
+        "username": "Manning Edward Clarke",
         "image_user": "1c292db1ed2d32ac50bb753493c4e3b3.jpg",
-        "email": "joshuafoster@example.com",
-        "password": "^R3^CewwO%",
+        "email": "pburke@example.net",
+        "password": "4422e611d1b71455491ff839d309f7cb",
         "role": "customer"
     },
     {
-        "username": "Henderson Brian Burke",
+        "username": "Moses Michael Sullivan",
         "image_user": "muzhskaja-ava-15-1024x977.webp",
-        "email": "karen80@example.com",
-        "password": "@u8!VJld7j",
+        "email": "higginsdaniel@example.org",
+        "password": "2a36ca201ca16fee23aca09469f78c0c",
         "role": "customer"
     },
     {
-        "username": "Schultz Tyler Butler",
+        "username": "Duncan Andrew Harrison",
         "image_user": "muzhskaja-ava-7.webp",
-        "email": "jenniferdonovan@example.com",
-        "password": "s%9gK93ymq",
+        "email": "mhall@example.org",
+        "password": "73923bbf44eec12596a829446348e97b",
         "role": "customer"
     },
     {
-        "username": "Kim Corey White",
-        "image_user": "boostrap 4 сделай слайдер из отзывов. Пример простого отзыва без_files",
-        "email": "raymond07@example.org",
-        "password": "*6gHuRor0W",
-        "role": "customer"
-    },
-    {
-        "username": "Richardson Adam Mcdonald",
+        "username": "Salas Gary Lopez",
         "image_user": "images6.jpg",
-        "email": "bakerkatherine@example.org",
-        "password": "(rS65X1zRy",
+        "email": "millerjesus@example.net",
+        "password": "b25be77a4dfd20dbffa295c6ccceedba",
         "role": "customer"
     },
     {
-        "username": "Robles Robert Allen",
+        "username": "Reyes Michael Henson",
         "image_user": "muzhskaja-ava-17-1024x977.webp",
-        "email": "irogers@example.com",
-        "password": "!J1YFtgJ^P",
+        "email": "pattersonjames@example.com",
+        "password": "47a64ed7b27a45a681cc1d195307335b",
         "role": "customer"
     },
     {
-        "username": "Sanchez George Mason",
+        "username": "Stewart David Owens",
         "image_user": "muzhskaja-ava-16-1024x977.webp",
-        "email": "gregorywilliams@example.org",
-        "password": "J+c3WXeP74",
+        "email": "robert58@example.org",
+        "password": "1cbe62677db28c42bf37efc7f432ee42",
         "role": "customer"
     },
     {
-        "username": "Mathis Fred Holloway",
+        "username": "Hill Jacob Jordan",
         "image_user": "images3.jpg",
-        "email": "keith65@example.net",
-        "password": "O(%8CWzBig",
+        "email": "phamtimothy@example.org",
+        "password": "a4b346ffa90ab294b8516e35949b8f4b",
         "role": "customer"
     },
     {
-        "username": "Smith William Gardner",
+        "username": "Galvan Travis Knapp",
         "image_user": "muzhskaja-ava-8.webp",
-        "email": "timothy25@example.com",
-        "password": "!O*Kim_d@8",
+        "email": "jennifer87@example.net",
+        "password": "75c9f58dc0f326e3e624b4b5f2ad3d30",
         "role": "customer"
     },
     {
-        "username": "Hall Jordan Berg",
+        "username": "Hill Brent Fox",
         "image_user": "911f6f6b6aa6f6c72bfe416d2d414fa8.jpg",
-        "email": "mccoytami@example.com",
-        "password": "kZYa8Db9m+",
+        "email": "ljones@example.org",
+        "password": "b26b7e2c66fbe90d6e4959e730b6ed83",
         "role": "customer"
     },
     {
-        "username": "Casey Anthony Cooper",
+        "username": "Jackson Jeffrey Vasquez",
         "image_user": "muzhskaja-ava-31.jpg",
-        "email": "erikcoffey@example.com",
-        "password": "^+T9QyIh#5",
+        "email": "zyoung@example.org",
+        "password": "b7762d61980564407285d4f9f6379113",
         "role": "customer"
     },
     {
-        "username": "Madden Donald Torres",
+        "username": "Cannon Dr. Michael Nichols",
         "image_user": "images5.jpg",
-        "email": "umcknight@example.com",
-        "password": "(0Qo)O0uSh",
+        "email": "fernandezsusan@example.net",
+        "password": "2241584f6ac13f27d7d3589c65565654",
         "role": "customer"
     },
     {
-        "username": "Thomas Scott Burke",
+        "username": "Riley Kenneth Garrison",
         "image_user": "0656d9c7610d11eea96aaaafe6635749_upscaled.jpg",
-        "email": "egordon@example.com",
-        "password": "@Ya0UEEnd4",
+        "email": "wdouglas@example.com",
+        "password": "de87187013952a3a86c8d421ade738f6",
         "role": "customer"
     }
 ]
