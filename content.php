@@ -17,7 +17,7 @@
 							</div>
 							<div class="col-lg-7">
 								<div class="banner-img">
-									<img class="img-fluid" src="./img/icon/icon-pc.png" alt="">
+									<img class="img-fluid" src="./img/icon/icon-pc.png" style="height: 550px; width: auto" alt="">
 								</div>
 							</div>
 						</div>
@@ -35,7 +35,7 @@
 							</div>
 							<div class="col-lg-7">
 								<div class="banner-img" >
-									<img class="img-fluid" height=auto src="./img/icon/icon-cpu.png" alt="">
+									<img class="img-fluid" height=auto src="./img/icon/icon-cpu.png" style="height: 550px; width: auto" alt="">
 								</div>
 							</div>
 						</div>
@@ -43,7 +43,7 @@
 						<div class="row single-slide align-items-center d-flex">
 							<div class="col-lg-5 col-md-6">
 								<div class="banner-content">
-									<h1>Производительные<br>Видеокарты</h1>
+									<h1>Эффективные<br>Видеокарты</h1>
 									<p>Видеокарты, способные справиться с самыми требовательными играми и приложениями, обеспечивая великолепную графику и плавный игровой процесс.</p>
 									<div class="add-bag d-flex align-items-center">
 										<a class="add-btn" href=""><span class="lnr lnr-magnifier"></span></a>
@@ -53,7 +53,7 @@
 							</div>
 							<div class="col-lg-7">
 								<div class="banner-img">
-									<img class="img-fluid" src="./img/icon/icon-gpu.png" alt="">
+									<img class="img-fluid" src="./img/icon/icon-gpu.png" style="height: 550px; width: auto" alt="">
 								</div>
 							</div>
 						</div>
@@ -71,7 +71,7 @@
 							</div>
 							<div class="col-lg-7">
 								<div class="banner-img">
-									<img class="img-fluid" height=auto src="./img/icon/icon-motherboard.png" alt="">
+									<img class="img-fluid" height=auto src="./img/icon/icon-motherboard.png" style="height: 550px; width: auto" alt="">
 								</div>
 							</div>
 						</div>
@@ -89,7 +89,7 @@
 							</div>
 							<div class="col-lg-7">
 								<div class="banner-img">
-									<img class="img-fluid" height=auto src="./img/icon/icon-ram.png" alt="">
+									<img class="img-fluid" height=auto src="./img/icon/icon-ram.png" style="height: 550px; width: auto" alt="">
 								</div>
 							</div>
 						</div>
@@ -107,7 +107,7 @@
 							</div>
 							<div class="col-lg-7">
 								<div class="banner-img">
-									<img class="img-fluid" height=auto src="./img/icon/icon-ssd.png" alt="">
+									<img class="img-fluid" height=auto src="./img/icon/icon-ssd.png" style="height: 550px; width: auto" alt="">
 								</div>
 							</div>
 						</div>
@@ -125,7 +125,7 @@
 							</div>
 							<div class="col-lg-7">
 								<div class="banner-img">
-									<img class="img-fluid" height=auto src="./img/icon/icon-hdd.png" alt="">
+									<img class="img-fluid" height=auto src="./img/icon/icon-hdd.png" style="height: 550px; width: auto" alt="">
 								</div>
 							</div>
 						</div>
@@ -143,7 +143,7 @@
 							</div>
 							<div class="col-lg-7">
 								<div class="banner-img">
-									<img class="img-fluid" height=auto src="./img/icon/icon-power-supply.png" alt="">
+									<img class="img-fluid" height=auto src="./img/icon/icon-power-supply.png" style="height: 550px; width: auto" alt="">
 								</div>
 							</div>
 						</div>
@@ -161,7 +161,7 @@
 							</div>
 							<div class="col-lg-7">
 								<div class="banner-img">
-									<img class="img-fluid" height=auto src="./img/icon/icon-corpus.png" alt="">
+									<img class="img-fluid" height=auto src="./img/icon/icon-corpus.png" style="height: 550px; width: auto" alt="">
 								</div>
 							</div>
 						</div>
@@ -179,7 +179,7 @@
 							</div>
 							<div class="col-lg-7">
 								<div class="banner-img">
-									<img class="img-fluid" height=auto src="./img/icon/icon-cooler.png" alt="">
+									<img class="img-fluid" height=auto src="./img/icon/icon-cooler.png" style="height: 550px; width: auto" alt="">
 								</div>
 							</div>
 						</div>
@@ -197,7 +197,7 @@
 							</div>
 							<div class="col-lg-7">
 								<div class="banner-img">
-									<img class="img-fluid" height=auto src="./img/icon/icon-monitor.png" alt="">
+									<img class="img-fluid" height=auto src="./img/icon/icon-monitor.png" style="height: 550px; width: auto" alt="">
 								</div>
 							</div>
 						</div>
@@ -215,7 +215,7 @@
 							</div>
 							<div class="col-lg-7">
 								<div class="banner-img">
-									<img class="img-fluid" height=auto src="./img/icon/icon-accessories.png" alt="">
+									<img class="img-fluid" height=auto src="./img/icon/icon-accessories.png" style="height: 550px; width: auto" alt="">
 								</div>
 							</div>
 						</div>
@@ -233,7 +233,7 @@
 							</div>
 							<div class="col-lg-7">
 								<div class="banner-img">
-									<img class="img-fluid" height=auto src="./img/icon/icon-keyboard.png" alt="">
+									<img class="img-fluid" height=auto src="./img/icon/icon-keyboard.png" style="height: 550px; width: auto" alt="">
 								</div>
 							</div>
 						</div>
