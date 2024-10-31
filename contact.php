@@ -1,4 +1,4 @@
-
+d
 
 <!-- Start Banner Area -->
 <section class="banner-area organic-breadcrumb">
@@ -62,7 +62,7 @@
 	<div class="container mt-5">
     <div class="row">
 		<div class="col-md-4 text-center">
-            <img src="./img/avtor.jpg" alt="Компания Tech Haven - Основатель Александр Красильников" class="img-fluid" width="330">
+            <img src="./img/avtor.jpg" alt="Компания Tech Haven - Основатель Кирилл Сухоруков" class="img-fluid" width="330">
         </div>
         <div class="col-md-8">
             <h2 >Здравствуйте, я – Сухоруков Кирилл,<br> основатель компании Tech Haven</h2>
@@ -79,8 +79,54 @@
             </ul>
         </div>
     </div>
+    </div>
+    <br>
+    <br>
+    <div id="testimonialCarousel" class="carousel slide" data-ride="carousel">
+        <h2 align="center">Отзывы наших покупателей</h2>
+        <div class="carousel-inner">
+            <?php
+                $flag = true;
+                foreach ($sql_review as $review){
+                    $activeClass = $flag ? 'active' : '';
+                    echo '<div class="carousel-item '.$activeClass.'">
+                            <div class="review_item">
+                                <div class="media">
+                                    <div class="d-flex">
+                                        <img src="./img/people/'.$review["image_user"].'" class="rounded-circle" style="width: 70px; height: 70px;" alt="">
+                                    </div>
+                                    <div class="media-body">
+                                        <h4>'.$review['username'].'</h4>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div>
+                                </div>
+                                <p>'.$review['comment'].'</p>
+                            </div>
+                        </div>';
+                        $flag = false;
+                }
+            ?>
+            <a class="carousel-control-prev" href="#testimonialCarousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Предыдущий</span>
+                </a>
+                <a class="carousel-control-next" href="#testimonialCarousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Следующий</span>
+                </a>
+            <!-- Добавьте дополнительные отзывы по аналогии -->
+    </div>
+   
+    <!-- Контролы для навигации -->
 </div>
+
+
 <br>
+
 </section>
 <!--- End about dream --->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>

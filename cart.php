@@ -84,20 +84,7 @@
                             updateQuantity('<?php echo $cart_prod['id_product']; ?>', result.value);
                             return false;" class="reduced items-count"><i class="lnr lnr-chevron-down"></i></button>
                     </div>
-                        <!-- <input type="text" name="qty" id="<?php echo $cart_prod['id_product']?>" maxlength="12" value="<?php echo $col?>" title="Quantity:" class="input-text qty" onkeydown="return false;">
-                        <button onclick="
-                            var result = document.getElementById('<?php echo $cart_prod['id_product']?>');
-                            var sst = parseInt(result.value);
-                            if (!isNaN(sst) && sst < 12) result.value++;
-                            updateTotal('<?php echo $cart_prod['id_product']; ?>', '<?php echo number_format($product_price, 2, '.', ''); ?>');
-                            return false;" class="increase items-count" type="button"><i class="lnr lnr-chevron-up"></i></button>
-                        <button onclick="
-                            var result = document.getElementById('<?php echo $cart_prod['id_product']?>');
-                            var sst = parseInt(result.value);
-                            if (!isNaN(sst) && sst > 1) result.value--;
-                            updateTotal('<?php echo $cart_prod['id_product']; ?>', '<?php echo number_format($product_price, 2, '.', ''); ?>');
-                            return false;" class="reduced items-count" type="button"><i class="lnr lnr-chevron-down"></i></button> -->
-                    </div>
+                </div>
                 </td>
                 <td>
                     <h5 class="end_price_product" id="<?php echo $cart_prod['id_product']."1"?>"><?php echo number_format($product_total, 2, '.', ''); ?> ₽</h5>

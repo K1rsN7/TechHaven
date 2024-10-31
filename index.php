@@ -37,6 +37,7 @@
         require('./content.php');
     }
     elseif ($page=='contact'){
+        $sql_review=$link->query("SELECT r.rating, u.username, r.comment, u.image_user FROM review r LEFT JOIN `user` u ON u.id_user = r.id_user");
         require('./contact.php');
     }
     elseif ($page=='shop'){
