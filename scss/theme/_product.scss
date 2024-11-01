@@ -1625,7 +1625,7 @@
 	box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.07);
 	height: 100%;
 	text-align: center;
-	padding-top: 115px;
+	padding-top: 0px;
 	h3{
 		color: $title-color;
 		text-transform: uppercase;
@@ -1640,7 +1640,7 @@
 		}
 	}
 	&.reg_form{
-		padding-top: 60px;
+		padding-top: 0px;
 		h3{
 			margin-bottom: 70px;
 		}

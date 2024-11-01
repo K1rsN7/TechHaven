@@ -111,9 +111,36 @@
         $product_data = $link->query($sql_text . " WHERE p.id_product = " . $id);
         $product_id = $product_data->fetch_assoc();
         require('./single-product.php');
-    }
-    elseif ($page=='cart'){
+    } elseif ($page=='cart'){
         require('./cart.php');
+    } elseif ($page=='login'){
+        if (isset($_SESSION['user'])) {
+            if ($_SESSION['user']['role']=="customer") {
+                require('./cabinet_user.php');
+            }else{
+                include("./header.php");
+                require('./cabinet_admin.php');
+            }
+
+        }else{
+            require('login.php');
+        }
+    }
+    elseif ($page=='registration'){
+        require('registration.php');
+    } elseif ($page=='user'){
+        require('cabinet_user.php');
+    } elseif ($page=='admin'){
+        if (isset($_SESSION['user'])) {
+            if ($_SESSION['user']['role']=="customer") {
+                require('./404.php');
+            }
+            else{
+                require('./cabinet_admin.php');
+            }
+        }
+    } else{
+        require('./404.php');
     }
 
     require('./footer.php');
@@ -151,5 +178,4 @@
         // Формируем строку запроса
         return $href;
     }
-    
 ?>

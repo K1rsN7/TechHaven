@@ -1,8 +1,8 @@
 -- Удаление таблиц, если они существуют
-DROP TABLE IF EXISTS `review`;
 DROP TABLE IF EXISTS `order_item`;
-DROP TABLE IF EXISTS `order`;
+DROP TABLE IF EXISTS `review`;
 DROP TABLE IF EXISTS `cart`;
+DROP TABLE IF EXISTS `order`;
 DROP TABLE IF EXISTS `product`;
 DROP TABLE IF EXISTS `brand`;
 DROP TABLE IF EXISTS `user`;
@@ -20,6 +20,7 @@ CREATE TABLE `user` (
     id_user INT AUTO_INCREMENT,
     username VARCHAR(100) NOT NULL,
     image_user text,
+    login VARCHAR(100) NOT NULL UNIQUE,
     email VARCHAR(100) NOT NULL UNIQUE,
     password VARCHAR(255) NOT NULL,
     role ENUM('customer', 'admin') DEFAULT 'customer',
@@ -79,7 +80,7 @@ CREATE TABLE `order` (
 );
 
 -- Товары в заказе
-CREATE TABLE `order_item` (
+CREATE TABLE `order_itesm` (
     id_order_item INT AUTO_INCREMENT,
     id_order INT,
     id_product INT,
@@ -98,5 +99,5 @@ CREATE TABLE `review` (
     comment VARCHAR(250) NOT NULL,
     review_date DATE DEFAULT CURRENT_DATE(),
     PRIMARY KEY (id_review),
-    FOREIGN KEY (id_user) REFERENCES `user`(id_user)
+    FOREIGN KEY (id_user) REFERENCES `user`(id_user) 
 );

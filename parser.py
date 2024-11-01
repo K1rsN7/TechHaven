@@ -321,10 +321,12 @@ def generate_user() -> None:
                 break
         password = faker.password().encode("utf8")
         password = hashlib.md5(password).hexdigest()
+        login = faker.user_name()
         role = 'customer'
         user_data = {
             "username": username,
             "image_user": image_user,
+            "login": login,
             "email": email,
             "password": password,
             "role": role

@@ -5,8 +5,8 @@
 				<div class="col-first">
 					<h1>Контакты</h1>
 					<nav class="d-flex align-items-center">
-						<a href="index.html">О магазине<span class="lnr lnr-arrow-right"></span></a>
-						<a href="category.html">Контакты</a>
+						<a href="index.php">О магазине<span class="lnr lnr-arrow-right"></span></a>
+						<a href="#">Контакты</a>
 					</nav>
 				</div>
 			</div>

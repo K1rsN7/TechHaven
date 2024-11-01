@@ -4,9 +4,9 @@
 				<div class="col-first">
 					<h1>Информация о продукте</h1>
 					<nav class="d-flex align-items-center">
-						<a href="index.html">О магазине<span class="lnr lnr-arrow-right"></span></a>
-						<a href="#">Каталог товаров<span class="lnr lnr-arrow-right"></span></a>
-						<a href="single-product.html">Информация о продукте</a>
+						<a href="index.php">О магазине<span class="lnr lnr-arrow-right"></span></a>
+						<a href="index.php?page=shop">Каталог товаров<span class="lnr lnr-arrow-right"></span></a>
+						<a href="#">Информация о продукте</a>
 					</nav>
 				</div>
 			</div>
