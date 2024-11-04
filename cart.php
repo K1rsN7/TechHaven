@@ -36,7 +36,7 @@
 
             <?php
             // Продукты из корзины
-            $sql_product_m = $link->query("SELECT * from product");
+            $sql_product_m= $_SESSION['all_products'];
             $add_cart = $_SESSION['cart'];
             $total_sum = 0; // Переменная для хранения итоговой суммы
 
@@ -99,6 +99,17 @@
                 <td><h5>Итоговая сумма</h5></td>
                 <td><h5 id="total_sum"><?php echo number_format($total_sum, 2, '.', ''); ?> ₽</h5></td> <!-- Итоговая сумма -->
             </tr>
+            <?php if (isset($_SESSION['user']) && $_SESSION['user']['role'] == "customer"): ?>
+                        <tr>
+                            <td colspan="3"></td>
+                            <td>
+                                <form action="events_cart/checkout.php" method="POST">
+                                    <input type="hidden" name="total" value="<?php echo number_format($total_sum, 2, '.', ''); ?>">
+                                    <button type="submit" class="btn btn-primary">Оформить заказ</button> 
+                                </form>
+                            </td>
+                        </tr>
+                    <?php endif; ?>
             <div class="card_area d-flex align-items-center">
                 <form action="events_cart/clear_cart.php" method="POST">
                     <button type="submit" class="btn btn-danger">Очистить корзину</button>

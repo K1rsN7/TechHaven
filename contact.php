@@ -85,7 +85,7 @@
         <div class="carousel-inner">
             <?php
                 $flag = true;
-                foreach ($sql_review as $review){
+                foreach ($_SESSION['sql_review'] as $review){
                     $activeClass = $flag ? 'active' : '';
                     echo '<div class="carousel-item '.$activeClass.'">
                             <div class="review_item">

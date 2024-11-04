@@ -191,6 +191,14 @@
         ");
     }
 
+    function getUserOrders($link){
+        $order_query = "SELECT * FROM `order` WHERE `id_user` = ? ORDER BY `order_date` DESC";
+        $order_stmt = $link->prepare($order_query);
+        $order_stmt->bind_param("i", $_SESSION['user']['id_user']);
+        $order_stmt->execute();
+        $_SESSION['my_orders'] = $order_stmt->get_result();
+    }
+
     $sql_text=$_SESSION['sql_zap_product'];
     $sql_product=$link->query($sql_text);
     $sql_product_count=$link->query("SELECT COUNT(*) FROM ($sql_text) AS subquery")->fetch_row()[0];
@@ -206,7 +214,7 @@
         load_page('./content.php');
     }
     elseif ($page=='contact'){
-        $sql_review=$link->query("SELECT r.rating, u.username, r.comment, u.image_user FROM review r LEFT JOIN `user` u ON u.id_user = r.id_user");
+        $_SESSION['sql_review']=$link->query("SELECT r.rating, u.username, r.comment, u.image_user FROM review r LEFT JOIN `user` u ON u.id_user = r.id_user");
         $_SESSION['is_header'] = true;
         load_page('./contact.php');
     }
@@ -285,16 +293,17 @@
         $id=(int)$_GET['id_product'];
         $sql_text=$_SESSION['sql_zap_product'];
         $product_data = $link->query($sql_text . " WHERE p.id_product = " . $id);
-        $product_id = $product_data->fetch_assoc();
+        $_SESSION['product_id'] = $product_data->fetch_assoc();
         $_SESSION['is_header'] = true;
         load_page('./single-product.php');
     } elseif ($page=='cart'){
+        $_SESSION['all_products'] = $link->query("SELECT * from product");
         $_SESSION['is_header'] = true;
         load_page('./cart.php');
     } elseif ($page=='login'){
         if (isset($_SESSION['user'])) {
             if ($_SESSION['user']['role']=="customer") {
-                $_SESSION['is_header'] = true;
+                getUserOrders($link);
                 load_page('./cabinet_user.php');
             }else{
                 $_SESSION['is_header'] = false;
@@ -313,6 +322,7 @@
     } elseif ($page=='user'){
         if (isset($_SESSION['user']) && $_SESSION['user']['role']=="customer"){
             $_SESSION['is_header'] = true;
+            getUserOrders($link);
             load_page('./cabinet_user.php');
         } else{
             $_SESSION['is_header'] = true;
@@ -328,6 +338,14 @@
                 $_SESSION['is_header'] = true;
                 load_page('./404.php');
             }
+        } else{
+            $_SESSION['is_header'] = true;
+            load_page('./404.php');
+        }
+    } elseif ($page=='success'){
+        if (isset($_SESSION['id_order'])){
+            $_SESSION['is_header'] = true;
+            load_page('./success.php');
         } else{
             $_SESSION['is_header'] = true;
             load_page('./404.php');
