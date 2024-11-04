@@ -332,7 +332,26 @@ def generate_user() -> None:
             "role": role
         }
         data.append(user_data)
-        
+    
+    data.append(
+        {
+            "username": 'Павлов Игнатий Федорович',
+            'login': 'user',
+            "email": 'ignat2000@mail.ru',
+            "password": hashlib.md5('user'.encode("utf8")).hexdigest(),
+            "role": 'customer'
+        }
+    )
+    data.append(
+        {
+            "username": 'Сухоруков Кирилл Андреевич',
+            "login": 'root',
+            "email": 'root@mail.ru',
+            "password": hashlib.md5('root'.encode("utf8")).hexdigest(),
+            "role": 'admin'
+        }
+    )
+    
     with open(f"./data/user.json", 'w', encoding='utf-8') as json_file:
         json.dump(data, json_file, ensure_ascii=False, indent=4)
     
@@ -379,6 +398,62 @@ def generate_review() -> None:
     with open(f"./data/review.json", 'w', encoding='utf-8') as json_file:
         json.dump(data, json_file, ensure_ascii=False, indent=4)
 
+def generate_orders():
+    """Генерация заказов
+    """
+    order = [] # Все заказы
+    order_items = [] # Все элементы заказа
+    data = [] # Все товары
+    for file in os.listdir("./data"):
+        if file.startswith('product_'):
+            with open(f'./data/{file}', 'r') as file:
+                if len(data):
+                    data = json.load(file)
+                else:
+                    data.extend(json.load(file))
+    
+    count_products = len(data)
+    for order_index in tqdm(range(1, 100000), desc="Генерация заказов"):
+        user_id = random.randint(1, 15) # id пользователя
+        
+        # Случайная дата заказа
+        start_timestamp = int(datetime.strptime('2023-01-01', "%Y-%m-%d").timestamp())
+        end_timestamp = int(datetime.strptime('2024-11-16', "%Y-%m-%d").timestamp())
+        random_timestamp = random.randint(start_timestamp, end_timestamp)
+        random_date = datetime.fromtimestamp(random_timestamp)
+        random_date = random_date.strftime("%Y-%m-%d %H:%M:%S")
+        status = random.choice(['pending', 'completed', 'canceled', 'on the way'])
+        sum = 0.00
+        
+        # Случайные товары в заказе
+        for _ in range(random.randint(2, 7)):
+            index_product = random.randint(0, count_products-1)
+            item = data[index_product]
+            quantity = random.randint(1, 10)
+            sum += float(item["price"])
+            
+            # Внесение элементов заказа
+            order_items.append({
+                'id_order': order_index,
+                'id_product': index_product+1,
+                'quantity': quantity,
+                'price' : item["price"]
+            })
+        
+        # Внесение записи заказа 
+        order.append({
+            'id_user': user_id,
+            'order_date': random_date,
+            'status': status,
+            'total': sum
+        })
+        
+    # Сохраняем заказы
+    with open(f"./data/order.json", 'w', encoding='utf-8') as json_file:
+        json.dump(order, json_file, ensure_ascii=False)
+    with open(f"./data/order_items.json", 'w', encoding='utf-8') as json_file:
+        json.dump(order_items, json_file, ensure_ascii=False)
+
 def import_data_in_database() -> None:
     """Внесение всех записей из файлов директории data в базу данных
     """
@@ -393,9 +468,13 @@ def import_data_in_database() -> None:
             print(f"Импортированы данные из review.json в базу данных")
         elif file.startswith("review"):
             continue
-        else:
+        elif 'order' not in file:
             import_data_from_json(f"./data/{file}", file.split(".")[0])
         print(f"Импортированы данные из {file[:-5]} в базу данных")
+    import_data_from_json(f"./data/order.json", 'order')
+    print("Импортированы данные из order в базу данных")
+    import_data_from_json("./data/order_items.json", 'order_items')
+    print("Импортированы данные из order_items в базу данных")
 
 if __name__ == "__main__":
     parse_data()
@@ -404,4 +483,6 @@ if __name__ == "__main__":
     correct_brands()
     generate_user()
     generate_review()
+    generate_orders()
     import_data_in_database()
+    

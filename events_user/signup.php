@@ -23,8 +23,7 @@ if (mysqli_num_rows($sql_user)>0) {
 	$password_hash=md5($password);
 	mysqli_query($link, "INSERT INTO `user`(`login`, `password`, `email`, `username`) VALUES ('$login', '$password_hash', '$email', '$username')");
 	$_SESSION['message']='Регистрация прошла успешно';
-	$redirect = isset($_SERVER['HTTP_REFERER'])? $_SERVER['HTTP_REFERER']:'redirect-form.html';
-	header("Location: $redirect");
+	header("Location: ../index.php?page=login");
 	exit();
 
 	}else{

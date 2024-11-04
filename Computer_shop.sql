@@ -17,7 +17,7 @@ CREATE TABLE `category` (
 
 -- Пользователи
 CREATE TABLE `user` (
-    id_user INT AUTO_INCREMENT,
+    id_user BIGINT AUTO_INCREMENT,
     username VARCHAR(100) NOT NULL,
     image_user text,
     login VARCHAR(100) NOT NULL UNIQUE,
@@ -54,35 +54,21 @@ CREATE TABLE `product` (
     FOREIGN KEY (id_brand) REFERENCES `brand`(id_brand)
 );
 
-
--- Корзина пользователей
-CREATE TABLE `cart` (
-    id_cart INT AUTO_INCREMENT,
-    id_user INT,
-    id_product INT,
-    quantity INT NOT NULL DEFAULT 1,
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    PRIMARY KEY (id_cart),
-    FOREIGN KEY (id_user) REFERENCES `user`(id_user),
-    FOREIGN KEY (id_product) REFERENCES `product`(id_product)
-);
-
-
 -- Заказы пользователей
 CREATE TABLE `order` (
-    id_order INT AUTO_INCREMENT,
-    id_user INT,
+    id_order BIGINT AUTO_INCREMENT,
+    id_user BIGINT,
     order_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    status ENUM('pending', 'completed', 'canceled') DEFAULT 'pending',
-    total DECIMAL(10, 2),
+    status ENUM('pending', 'completed', 'canceled', 'on the way') DEFAULT 'pending',
+    total DECIMAL(20, 2),
     PRIMARY KEY (id_order),
     FOREIGN KEY (id_user) REFERENCES `user`(id_user)
 );
 
 -- Товары в заказе
-CREATE TABLE `order_itesm` (
-    id_order_item INT AUTO_INCREMENT,
-    id_order INT,
+CREATE TABLE `order_items` (
+    id_order_item BIGINT AUTO_INCREMENT,
+    id_order BIGINT,
     id_product INT,
     quantity INT NOT NULL DEFAULT 1,
     price DECIMAL(10, 2) NOT NULL,
@@ -93,8 +79,8 @@ CREATE TABLE `order_itesm` (
 
 -- Отзывы
 CREATE TABLE `review` (
-    id_review INT AUTO_INCREMENT,
-    id_user int,
+    id_review BIGINT AUTO_INCREMENT,
+    id_user BIGINT,
     rating INT CHECK (rating >= 1 AND rating <= 5),
     comment VARCHAR(250) NOT NULL,
     review_date DATE DEFAULT CURRENT_DATE(),
