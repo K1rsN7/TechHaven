@@ -295,6 +295,11 @@
         $product_data = $link->query($sql_text . " WHERE p.id_product = " . $id);
         $_SESSION['product_id'] = $product_data->fetch_assoc();
         $_SESSION['is_header'] = true;
+        if ($product_data->num_rows === 0) {
+            // Если товар не найден, загружаем файл 404.php
+            load_page('./404.php');
+            exit(); // Завершаем выполнение скрипта
+        }
         load_page('./single-product.php');
     } elseif ($page=='cart'){
         $_SESSION['all_products'] = $link->query("SELECT * from product");
