@@ -350,6 +350,9 @@
             $_SESSION['is_header'] = true;
             load_page('./404.php');
         }
+    } elseif ($page=='politic') {
+        $_SESSION['is_header'] = true;
+        load_page('./politic.php');
     } else{
         $load_page['is_header'] = true;
         load_page('./404.php');
