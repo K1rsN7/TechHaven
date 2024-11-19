@@ -1,5 +1,7 @@
-<img src="https://github.com/K1rsN7/TechHaven/blob/master/img/logo.webp">
+
 <div align="center">
+	<img src="https://github.com/K1rsN7/TechHaven/blob/master/img/logo.webp">
+	<br><br>
   <a href="https://github.com/K1rsN7/TechHaven/issues">
 		<img src="https://img.shields.io/github/issues/K1rsN7/TechHaven?color=4A73DF&labelColor=1C2325&style=for-the-badge">
 	</a>
