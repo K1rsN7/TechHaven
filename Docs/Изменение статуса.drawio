@@ -1,0 +1,109 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.7.17 Chrome/128.0.6613.186 Electron/32.2.2 Safari/537.36" version="24.7.17">
+  <diagram name="Page-1" id="hPvZyRAlkJFVNJidljv0">
+    <mxGraphModel dx="1586" dy="851" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="rl190019idn-pyYYRpBx-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="rl190019idn-pyYYRpBx-2">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="205" y="110" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rl190019idn-pyYYRpBx-2" value="" style="html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="-115" y="100" width="70" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="rl190019idn-pyYYRpBx-3" value="Страница авторизации" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="1">
+          <mxGeometry x="205" y="30" width="100" height="370" as="geometry" />
+        </mxCell>
+        <mxCell id="rl190019idn-pyYYRpBx-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="rl190019idn-pyYYRpBx-12">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="275" y="110" as="sourcePoint" />
+            <mxPoint x="345" y="110" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rl190019idn-pyYYRpBx-11" value="База данных" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="1">
+          <mxGeometry x="475" y="30" width="100" height="370" as="geometry" />
+        </mxCell>
+        <mxCell id="rl190019idn-pyYYRpBx-20" value="Ввод&lt;div&gt;некорретных&amp;nbsp;&lt;/div&gt;&lt;div&gt;данных&lt;/div&gt;" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="rl190019idn-pyYYRpBx-22" target="rl190019idn-pyYYRpBx-23">
+          <mxGeometry x="0.1514" y="40" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="305" y="120" />
+              <mxPoint x="305" y="150" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rl190019idn-pyYYRpBx-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="rl190019idn-pyYYRpBx-22" target="rl190019idn-pyYYRpBx-24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rl190019idn-pyYYRpBx-22" value="" style="html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="220" y="100" width="70" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="rl190019idn-pyYYRpBx-23" value="" style="html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="220" y="150" width="70" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="rl190019idn-pyYYRpBx-24" value="" style="html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="490" y="100" width="70" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="rl190019idn-pyYYRpBx-25" value="Возврат результата" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="rl190019idn-pyYYRpBx-26">
+          <mxGeometry x="-0.2759" y="-10" relative="1" as="geometry">
+            <mxPoint x="290" y="220" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rl190019idn-pyYYRpBx-26" value="" style="html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="490" y="210" width="70" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="rl190019idn-pyYYRpBx-27" value="Сообщение&lt;div&gt;о неверных&lt;/div&gt;&lt;div&gt;данных&lt;/div&gt;" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="rl190019idn-pyYYRpBx-29" target="rl190019idn-pyYYRpBx-30">
+          <mxGeometry x="0.1514" y="40" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="305" y="230" />
+              <mxPoint x="305" y="260" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rl190019idn-pyYYRpBx-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="rl190019idn-pyYYRpBx-29" target="rl190019idn-pyYYRpBx-32">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rl190019idn-pyYYRpBx-29" value="" style="html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="220" y="210" width="70" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="rl190019idn-pyYYRpBx-30" value="" style="html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="220" y="260" width="70" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="rl190019idn-pyYYRpBx-31" value="Личный кабинет&lt;div&gt;администратора&lt;/div&gt;" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="1">
+          <mxGeometry x="45" y="30" width="100" height="370" as="geometry" />
+        </mxCell>
+        <mxCell id="rl190019idn-pyYYRpBx-32" value="" style="html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="60" y="210" width="70" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="rl190019idn-pyYYRpBx-33" value="Главная страница" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="1">
+          <mxGeometry x="-130" y="30" width="100" height="370" as="geometry" />
+        </mxCell>
+        <mxCell id="rl190019idn-pyYYRpBx-36" value="Запрос на изменение статуса заказа" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="rl190019idn-pyYYRpBx-34" target="rl190019idn-pyYYRpBx-35">
+          <mxGeometry x="-0.4167" y="10" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rl190019idn-pyYYRpBx-34" value="" style="html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="60" y="300" width="70" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="rl190019idn-pyYYRpBx-35" value="" style="html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="490" y="300" width="70" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="rl190019idn-pyYYRpBx-39" value="Обновленный список заявок" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="rl190019idn-pyYYRpBx-37" target="rl190019idn-pyYYRpBx-38">
+          <mxGeometry x="-0.1944" y="-10" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rl190019idn-pyYYRpBx-37" value="" style="html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="490" y="350" width="70" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="rl190019idn-pyYYRpBx-38" value="" style="html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="60" y="350" width="70" height="20" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
